@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="output.css" />
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <Title>Aman's Portfolio</Title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <!-- <link rel="stylesheet" href="index.js"> -->
+    <title>Aman's Portfolio</title>
   </head>
-  <body class="" style="background-color: rgb(32, 32, 32);">
+  <body class="" style="background-color: rgb(32, 32, 32)">
     <div class="wrapper w-full">
       <div class="top-area">
-        <nav class="  w-full h-20 max-sm:h-10 bg-white flex justify-around items-center fixed z-50">
-          <a href="/src/index.html" class="inline-block text-fuchsia-600 text-sm sm:text-2xl font-semibold ">Aman Momin</a>
-          <button class=" border-2 border-fuchsia-600 rounded-lg 
-                      
-                      lg:hidden
-          ">
-              <img class=" mx-1 my-1 
-                          sm:w-4 w-2 sm:mx-2 sm:my-3 " 
-                          src="lines-svgrepo-com.svg" alt="">
+        <nav
+          class="w-full h-20 max-sm:h-10 bg-white flex justify-around items-center fixed z-50"
+        >
+          <a
+            href="/src/index.html"
+            class="inline-block text-fuchsia-600 text-sm sm:text-2xl font-semibold"
+            >Aman Momin</a
+          >
+          <button
+            id="menuToggle"
+            class="z-70 border-2 border-fuchsia-600 rounded-lg lg:hidden"
+            type="button"
+          >
+            <img
+              class="mx-1 my-1 sm:w-4 w-2 sm:mx-2 sm:my-3"
+              src="lines-svgrepo-com.svg"
+              alt=""
+            />
           </button>
-          <ul class="
-                  hidden 
-                  sm:hidden   
-                  lg:grid grid-flow-row grid-cols-5 gap-12 uppercase text-gray-600">
-            <li >
+          <ul
+            class="hidden sm:hidden lg:grid grid-flow-row grid-cols-5 gap-12 uppercase text-gray-600"
+          >
+            <li>
               <a href="/about">about me</a>
             </li>
             <li>
@@ -42,157 +51,203 @@
             </li>
           </ul>
         </nav>
-        <div class="heropart bg-[url('hero.jpg')] bg-cover bg-center h-dvh w-full">
-            <div class="heropart-txt p-24 lg:p-48">
-              <h2 class="text-white text-2xl sm:text-4xl md:text-4xl font-bold text-center leading-normal xl:text-6xl">
-                  Hi
-                  <span class="text-fuchsia-600">,</span> 
-                  I am 
-                  <br>
-                  Aman 
-                  <br>
-                  Momin
-                  <span class="text-fuchsia-600">.</span>
-                  <br>
-                  
-              </h2>
-              <h3 class="text-lg pt-10 fade-in font-bold text-center text-fuchsia-600 m-6 animate-pulse
-                          sm:text-xl sm:pt-0
-                          lg:text-4xl
-              ">
-                    Full Stack Developer
-              </h3>
-            </div>
+
+        <div
+          id="mobileMenu"
+          class="fixed top-0 left-[-100%] w-3/5 h-full bg-white z-40 shadow-lg transition-all duration-300 lg:hidden"
+        >
+          <ul class="flex flex-col p-6 gap-6 text-gray-600 uppercase mt-20">
+            <li>
+              <a href="#about" class="hover:text-fuchsia-600">about me</a>
+            </li>
+            <li>
+              <a href="#Education" class="hover:text-fuchsia-600">Education</a>
+            </li>
+            <li><a href="#Skills" class="hover:text-fuchsia-600">Skills</a></li>
+            <li>
+              <a href="#Projects" class="hover:text-fuchsia-600">Projects</a>
+            </li>
+            <li>
+              <a href="#Contact" class="hover:text-fuchsia-600">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="heropart bg-[url('hero.jpg')] bg-cover bg-center h-dvh w-full"
+        >
+          <div class="heropart-txt p-24 lg:p-48">
+            <h2
+              class="text-white text-2xl sm:text-4xl md:text-4xl font-bold text-center leading-normal xl:text-6xl"
+            >
+              Hi
+              <span class="text-fuchsia-600">,</span>
+              I am
+              <br />
+              Aman
+              <br />
+              Momin
+              <span class="text-fuchsia-600">.</span>
+              <br />
+            </h2>
+            <h3
+              class="text-lg pt-10 fade-in font-bold text-center text-fuchsia-600 m-6 animate-pulse sm:text-xl sm:pt-0 lg:text-4xl"
+            >
+              Full Stack Developer
+            </h3>
+          </div>
         </div>
       </div>
 
       <section id="about" class="about">
-        <div class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2">
+        <div
+          class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2"
+        >
           <h2>About me</h2>
         </div>
         <div>
           <div class="about-content w-full">
             <div class="row">
-              <div class="col-sm-6  lg:flex ">
-                <div class="info text-white p-10 
-                            lg:pt-20 lg:pl-40 lg:pr-10 lg:w-1/2
-                ">
-                  <h3 class="font-bold text-sm w-full text-center
-                                sm:text-center
-                                md:text-lg md:text-center
-                                lg: lg:text-left
-                  ">
-                    I am a passionate Full Stack Developer with a strong command of both front-end and back-end technologies. I specialize in building responsive, high-performance web applications with clean code and seamless user experiences. From database design to pixel-perfect interfaces, I bring ideas to life across the full development stack.
+              <div class="col-sm-6 lg:flex">
+                <div
+                  class="info text-white p-10 lg:pt-20 lg:pl-40 lg:pr-10 lg:w-1/2"
+                >
+                  <h3
+                    class="font-bold text-sm w-full text-center sm:text-center md:text-lg md:text-center lg: lg:text-left"
+                  >
+                    I am a passionate Full Stack Developer with a strong command
+                    of both front-end and back-end technologies. I specialize in
+                    building responsive, high-performance web applications with
+                    clean code and seamless user experiences. From database
+                    design to pixel-perfect interfaces, I bring ideas to life
+                    across the full development stack.
                   </h3>
-                  <p class = "text-center w-full pt-10 pb-10 text-base font-bold text-gray-500 border-b-2 
-                              sm:text-center
-                              lg:text-left
-                  ">
-                    I'm proud to be the first Lead of GDG-JJMCOE, where I’ve had the privilege of building a thriving developer community from the ground up. I’m passionate about leading teams, organizing impactful tech events, and creating spaces where innovation and collaboration thrive. Let’s build, lead, and grow together!
+                  <p
+                    class="text-center w-full pt-10 pb-10 text-base font-bold text-gray-500 border-b-2 sm:text-center lg:text-left"
+                  >
+                    I'm proud to be the first Lead of GDG-JJMCOE, where I’ve had
+                    the privilege of building a thriving developer community
+                    from the ground up. I’m passionate about leading teams,
+                    organizing impactful tech events, and creating spaces where
+                    innovation and collaboration thrive. Let’s build, lead, and
+                    grow together!
                   </p>
-                  <div class="row m-2 text-sm w-full
-                              sm:flex justify-around
-                              md:mt-10 md:flex md:justify-around
-                              lg: lg:text-base lg:ml-0
-                  ">
-                    <div class="col-sm-4 text-center
-                    ">
-                      <div class="single-about-add-info
-                                  md:text-left
-                      ">
+                  <div
+                    class="row m-2 text-sm w-full sm:flex justify-around md:mt-10 md:flex md:justify-around lg: lg:text-base lg:ml-0"
+                  >
+                    <div class="col-sm-4 text-center">
+                      <div class="single-about-add-info md:text-left">
                         <h3 class="pb-2 lg:font-bold">Phone</h3>
                         <p>7498253466</p>
                       </div>
                     </div>
-                    <div class="col-sm-4 text-center p-4 pb-0
-                                sm:p-0 sm:pl-20
-                                md:text-left                                    
-                    ">
-                      <div class="single-about-add-info ">
-                        <h3 class="pb-2 lg:font-bold
-                        ">Email</h3>
+                    <div
+                      class="col-sm-4 text-center p-4 pb-0 sm:p-0 sm:pl-20 md:text-left"
+                    >
+                      <div class="single-about-add-info">
+                        <h3 class="pb-2 lg:font-bold">Email</h3>
                         <p>mominaman2207@gmail.com</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="content relative w-full lg:w-1/2 flex justify-center items-center
-                          lg:p-14
-                          xl:w-533
-                   
-                ">
-                      <div class="relative">
+                <div
+                  class="content relative w-full lg:w-1/2 flex justify-center items-center lg:p-14 xl:w-533"
+                >
+                  <div class="relative">
+                    <img
+                      src="aman_logo.jpg"
+                      alt="Profile"
+                      class="rounded-2xl w-full h-auto"
+                    />
 
-                        <img src="aman_logo.jpg" alt="Profile" class="rounded-2xl w-full h-auto">
+                    <div
+                      class="absolute -bottom-4 w-full text-fuchsia-600 p-4 flex justify-center space-x-6 rounded-b-2xl backdrop-blur-sm transition-all duration-300"
+                    >
+                      <a href="#" class="hover:scale-125 transition-transform">
+                        <img
+                          src="linkedin.svg"
+                          alt="LinkedIn"
+                          class="w-6 h-6 sm:w-8 sm:h-8"
+                        />
+                      </a>
 
-                        <div class="absolute -bottom-4 w-full text-fuchsia-600 p-4 flex justify-center space-x-6 rounded-b-2xl backdrop-blur-sm transition-all duration-300">
-
-                          <a href="#" class="hover:scale-125 transition-transform ">
-                            <img src="linkedin.svg" alt="LinkedIn" class="w-6 h-6 sm:w-8 sm:h-8 ">
-                          </a>
-
-                          <a href="#" class="hover:scale-125 transition-transform ">
-                            <img src="github-svgrepo-com.svg" alt="GitHub" class="w-6 h-6 sm:w-8 sm:h-8 ">
-                          </a>
-                          
-                        </div>
-                      </div>
+                      <a href="#" class="hover:scale-125 transition-transform">
+                        <img
+                          src="github-svgrepo-com.svg"
+                          alt="GitHub"
+                          class="w-6 h-6 sm:w-8 sm:h-8"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
       </section>
 
       <section id="Education" class="Education text-white">
-        <div class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2">
+        <div
+          class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2"
+        >
           <h2>Education</h2>
         </div>
-        <div class="edu-info  py-20 lg:pl-40 lg:flex justify-between items-center">
-
+        <div
+          class="edu-info py-20 lg:pl-40 lg:flex justify-between items-center"
+        >
           <div class="diploma pr-10 pl-10 lg:pl-0 lg:w-1/2">
-            <div class="heading ">
+            <div class="heading">
               <h2 class="text-white leading-10">2020 - 2023</h2>
-              <h3 class="text-gray-500 leading-8">Diploma in Computer Engineering</h3>
+              <h3 class="text-gray-500 leading-8">
+                Diploma in Computer Engineering
+              </h3>
             </div>
-            <div class="time-line flex justify-center items-center py-6 lg:w-3/5 lg:flex lg:justify-start lg:items-center">
-              
-              <span class="inline-block bg-gray-600 h-0.5 w-full "></span>
-              <img src="dot-svgrepo-com.svg" alt="Dot image" class="h-4">
-
+            <div
+              class="time-line flex justify-center items-center py-6 lg:w-3/5 lg:flex lg:justify-start lg:items-center"
+            >
+              <span class="inline-block bg-gray-600 h-0.5 w-full"></span>
+              <img src="dot-svgrepo-com.svg" alt="Dot image" class="h-4" />
             </div>
             <div class="timeline">
               <div class="info">
-                <h3 class=" pb-2">Sharad Institute of Technology,Polytechnic</h3>
+                <h3 class="pb-2">Sharad Institute of Technology,Polytechnic</h3>
                 <h4 class="text-gray-600 pb-2">Yadrav</h4>
                 <p>
-                  "A passionate diploma holder in Computer Engineering with a solid foundation in programming, hardware systems, and networking, committed to driving innovation through practical solutions and continuous learning."
+                  "A passionate diploma holder in Computer Engineering with a
+                  solid foundation in programming, hardware systems, and
+                  networking, committed to driving innovation through practical
+                  solutions and continuous learning."
                 </p>
               </div>
             </div>
-
           </div>
 
           <div class="degree px-10 pt-10 lg:pt-0 lg:w-1/2">
-            <div class="heading ">
+            <div class="heading">
               <h2 class="text-white leading-10">2023 - 2026</h2>
-              <h3 class="text-gray-500 leading-8">B.Tech in Artificial Intelligence and Data Science</h3>
+              <h3 class="text-gray-500 leading-8">
+                B.Tech in Artificial Intelligence and Data Science
+              </h3>
             </div>
-            <div class="time-line flex justify-center items-center py-6 lg:w-3/5 lg:flex lg:justify-start lg:items-center">
-
-              <img src="dot-svgrepo-com.svg" alt="Dot image" class="h-4">
+            <div
+              class="time-line flex justify-center items-center py-6 lg:w-3/5 lg:flex lg:justify-start lg:items-center"
+            >
+              <img src="dot-svgrepo-com.svg" alt="Dot image" class="h-4" />
               <span class="inline-block bg-gray-600 h-0.5 w-full"></span>
-
             </div>
             <div class="timeline">
               <div class="info">
-                <h3 class=" pb-2">Dr. J. J. Magdum College Of Engineering </h3>
+                <h3 class="pb-2">Dr. J. J. Magdum College Of Engineering</h3>
                 <h4 class="text-gray-600 pb-2">Jaysingpur</h4>
                 <p>
-                  "A dedicated engineering graduate with a strong grasp of technical concepts, problem-solving, and innovation. Passionate about building efficient solutions that bridge theory and real-world application. Always eager to learn, adapt, and contribute to meaningful advancements."
+                  "A dedicated engineering graduate with a strong grasp of
+                  technical concepts, problem-solving, and innovation.
+                  Passionate about building efficient solutions that bridge
+                  theory and real-world application. Always eager to learn,
+                  adapt, and contribute to meaningful advancements."
                 </p>
               </div>
             </div>
@@ -201,134 +256,119 @@
       </section>
 
       <section id="Skills" class="Skills text-white">
-        <div class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2">
+        <div
+          class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2"
+        >
           <h2>Skills</h2>
         </div>
 
-        <div class=" lg:flex justify-center items-start w-full lg:px-40 lg:pb-10  lg:pt-10 gap-20">
+        <div
+          class="lg:flex justify-center items-start w-full lg:px-40 lg:pb-10 lg:pt-10 gap-20"
+        >
           <div class="first-container p-4 w-full lg:w-1/2">
             <div class="bar-wrapper pb-4">
-              <span class="progressText font-bold ">
-                JAVASCRIPT
-              </span>
+              <span class="progressText font-bold"> JAVASCRIPT </span>
               <div class="single-progress-txt flex mt-4">
-                <div class="progress rounded-sm bg-white h-2  w-3/4">
-                  <div class="progress-bar relative h-2 rounded-sm bg-fuchsia-600" style="width: 85%;">
-                  </div>
+                <div class="progress rounded-sm bg-white h-2 w-3/4">
+                  <div
+                    class="progress-bar relative h-2 rounded-sm bg-fuchsia-600"
+                    style="width: 85%"
+                  ></div>
                 </div>
-                <h3 class="ml-2 -top-3 relative">
-                  85%
-                </h3>
-              </div>
-            </div>
-            
-            <div class="bar-wrapper pb-4">
-              <span class="progressText font-bold">
-                PYTHON 
-              </span>
-              <div class="single-progress-txt flex mt-4">
-                <div class="progress rounded-sm bg-white h-2  w-3/4">
-                  <div class="progress-bar relative h-2 rounded-sm bg-fuchsia-600" style="width: 70%;">
-                  </div>
-                </div>
-                <h3 class="ml-2 -top-3 relative">
-                  70%
-                </h3>
+                <h3 class="ml-2 -top-3 relative">85%</h3>
               </div>
             </div>
 
             <div class="bar-wrapper pb-4">
-              <span class="progressText font-bold">
-                JAVA 
-              </span>
+              <span class="progressText font-bold"> PYTHON </span>
               <div class="single-progress-txt flex mt-4">
-                <div class="progress rounded-sm bg-white h-2  w-3/4">
-                  <div class="progress-bar relative h-2 rounded-sm bg-fuchsia-600" style="width: 90%;">
-                  </div>
+                <div class="progress rounded-sm bg-white h-2 w-3/4">
+                  <div
+                    class="progress-bar relative h-2 rounded-sm bg-fuchsia-600"
+                    style="width: 70%"
+                  ></div>
                 </div>
-                <h3 class="ml-2 -top-3 relative">
-                  90%
-                </h3>
+                <h3 class="ml-2 -top-3 relative">70%</h3>
               </div>
             </div>
 
+            <div class="bar-wrapper pb-4">
+              <span class="progressText font-bold"> JAVA </span>
+              <div class="single-progress-txt flex mt-4">
+                <div class="progress rounded-sm bg-white h-2 w-3/4">
+                  <div
+                    class="progress-bar relative h-2 rounded-sm bg-fuchsia-600"
+                    style="width: 90%"
+                  ></div>
+                </div>
+                <h3 class="ml-2 -top-3 relative">90%</h3>
+              </div>
+            </div>
 
             <div class="bar-wrapper pb-4">
-              <span class="progressText font-bold">
-                DSA
-              </span>
+              <span class="progressText font-bold"> DSA </span>
               <div class="single-progress-txt flex mt-4">
-                <div class="progress rounded-sm bg-white h-2  w-3/4">
-                  <div class="progress-bar relative h-2 rounded-sm bg-fuchsia-600" style="width: 80%;">
-                  </div>
+                <div class="progress rounded-sm bg-white h-2 w-3/4">
+                  <div
+                    class="progress-bar relative h-2 rounded-sm bg-fuchsia-600"
+                    style="width: 80%"
+                  ></div>
                 </div>
-                <h3 class="ml-2 -top-3 relative">
-                  80%
-                </h3>
+                <h3 class="ml-2 -top-3 relative">80%</h3>
               </div>
             </div>
           </div>
 
-
-          <div class="second-container p-4 w-full lg:w-1/2 ">
+          <div class="second-container p-4 w-full lg:w-1/2">
             <div class="bar-wrapper pb-4">
-              <span class="progressText font-bold ">
-                REACT JS
-              </span>
+              <span class="progressText font-bold"> REACT JS </span>
               <div class="single-progress-txt flex mt-4">
-                <div class="progress rounded-sm bg-white h-2  w-3/4">
-                  <div class="progress-bar relative h-2 rounded-sm bg-fuchsia-600" style="width: 85%;">
-                  </div>
+                <div class="progress rounded-sm bg-white h-2 w-3/4">
+                  <div
+                    class="progress-bar relative h-2 rounded-sm bg-fuchsia-600"
+                    style="width: 85%"
+                  ></div>
                 </div>
-                <h3 class="ml-2 -top-3 relative">
-                  85%
-                </h3>
-              </div>
-            </div>
-            
-            <div class="bar-wrapper pb-4">
-              <span class="progressText font-bold">
-                SPRING BOOT - JAVA 
-              </span>
-              <div class="single-progress-txt flex mt-4">
-                <div class="progress rounded-sm bg-white h-2  w-3/4">
-                  <div class="progress-bar relative h-2 rounded-sm bg-fuchsia-600" style="width: 70%;">
-                  </div>
-                </div>
-                <h3 class="ml-2 -top-3 relative">
-                  70%
-                </h3>
+                <h3 class="ml-2 -top-3 relative">85%</h3>
               </div>
             </div>
 
             <div class="bar-wrapper pb-4">
-              <span class="progressText font-bold">
-                TEAM MANAGEMENT 
-              </span>
+              <span class="progressText font-bold"> SPRING BOOT - JAVA </span>
               <div class="single-progress-txt flex mt-4">
-                <div class="progress rounded-sm bg-white h-2  w-3/4">
-                  <div class="progress-bar relative h-2 rounded-sm bg-fuchsia-600" style="width: 90%;">
-                  </div>
+                <div class="progress rounded-sm bg-white h-2 w-3/4">
+                  <div
+                    class="progress-bar relative h-2 rounded-sm bg-fuchsia-600"
+                    style="width: 70%"
+                  ></div>
                 </div>
-                <h3 class="ml-2 -top-3 relative">
-                  90%
-                </h3>
+                <h3 class="ml-2 -top-3 relative">70%</h3>
               </div>
             </div>
 
+            <div class="bar-wrapper pb-4">
+              <span class="progressText font-bold"> TEAM MANAGEMENT </span>
+              <div class="single-progress-txt flex mt-4">
+                <div class="progress rounded-sm bg-white h-2 w-3/4">
+                  <div
+                    class="progress-bar relative h-2 rounded-sm bg-fuchsia-600"
+                    style="width: 90%"
+                  ></div>
+                </div>
+                <h3 class="ml-2 -top-3 relative">90%</h3>
+              </div>
+            </div>
 
             <div class="bar-wrapper pb-4">
-              <span class="progressText font-bold">
-                LEADERSHIP
-              </span>
+              <span class="progressText font-bold"> LEADERSHIP </span>
               <div class="single-progress-txt flex mt-4">
-                <div class="progress rounded-sm bg-white h-2  w-3/4">
-                  <div class="progress-bar relative h-2 rounded-sm bg-fuchsia-600" style="width: 80%;">
-                  </div>
+                <div class="progress rounded-sm bg-white h-2 w-3/4">
+                  <div
+                    class="progress-bar relative h-2 rounded-sm bg-fuchsia-600"
+                    style="width: 80%"
+                  ></div>
                 </div>
-                <h3 class="ml-2 -top-3 relative">
-                  80%
-                </h3>
+                <h3 class="ml-2 -top-3 relative">80%</h3>
               </div>
             </div>
           </div>
@@ -336,148 +376,212 @@
       </section>
 
       <section id="experiences" class="text-white">
-        <div class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2">
+        <div
+          class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2"
+        >
           <h2>OTHERE CLUBING ACTIVITIES</h2>
         </div>
 
         <div class="2 pb-8 Lg:px-20 lg:py-10">
-          <div class="lg:flex ">
-
-            <div class="title text-center p-4 ">
+          <div class="lg:flex">
+            <div class="title text-center p-4">
               <h2 class="font-bold pb-4">GDG-JJMCOE ORGANIZER 2024-25</h2>
-              <div class="bg-[url('./symbol.png')] w-64 h-64 bg-contain bg-no-repeat bg-center aspect-square overflow-hidden mx-auto"></div>
-              <h3 class="text-center p-4 font-bold">I have been selected as the First GDG Organizer at JJMCOE.</h3>
-              <h4><a href="https://gdg.community.dev/u/aman45/" target="_blank" class="text-gray-500 font-bold">Click Here</a></h4>
-              
+              <div
+                class="bg-[url('./symbol.png')] w-64 h-64 bg-contain bg-no-repeat bg-center aspect-square overflow-hidden mx-auto"
+              ></div>
+              <h3 class="text-center p-4 font-bold">
+                I have been selected as the First GDG Organizer at JJMCOE.
+              </h3>
+              <h4>
+                <a
+                  href="https://gdg.community.dev/u/aman45/"
+                  target="_blank"
+                  class="text-gray-500 font-bold"
+                  >Click Here</a
+                >
+              </h4>
             </div>
 
-            <div class="title text-center p-4 ">
+            <div class="title text-center p-4">
               <h2 class="font-bold pb-4">E-CELL CO-ORDINATOR</h2>
-              <div class="bg-[url('./E-cell.webp')] w-64 h-64 bg-contain bg-no-repeat bg-center aspect-square overflow-hidden mx-auto"></div>
-              <h3 class="text-center p-4 font-bold">I have been selected as the First GDG Organizer at JJMCOE.</h3>
-              <h4><a href="https://gdg.community.dev/u/aman45/" target="_blank" class="text-gray-500 font-bold">Click Here</a></h4>
-              
+              <div
+                class="bg-[url('./E-cell.webp')] w-64 h-64 bg-contain bg-no-repeat bg-center aspect-square overflow-hidden mx-auto"
+              ></div>
+              <h3 class="text-center p-4 font-bold">
+                I have been selected as the First GDG Organizer at JJMCOE.
+              </h3>
+              <h4>
+                <a
+                  href="https://gdg.community.dev/u/aman45/"
+                  target="_blank"
+                  class="text-gray-500 font-bold"
+                  >Click Here</a
+                >
+              </h4>
             </div>
 
-            <div class="title text-center p-4 ">
+            <div class="title text-center p-4">
               <h2 class="font-bold pb-4">GDG-JJMCOE ORGANIZER 2024-25</h2>
-              <div class="bg-[url('./ARTISA.jpg')] w-64 h-64 bg-contain bg-no-repeat bg-center aspect-square overflow-hidden mx-auto"></div>
-              <h3 class="text-center p-4 font-bold">I have been selected as the First GDG Organizer at JJMCOE.</h3>
-              <h4><a href="https://gdg.community.dev/u/aman45/" target="_blank" class="text-gray-500 font-bold">Click Here</a></h4>
-              
+              <div
+                class="bg-[url('./ARTISA.jpg')] w-64 h-64 bg-contain bg-no-repeat bg-center aspect-square overflow-hidden mx-auto"
+              ></div>
+              <h3 class="text-center p-4 font-bold">
+                I have been selected as the First GDG Organizer at JJMCOE.
+              </h3>
+              <h4>
+                <a
+                  href="https://gdg.community.dev/u/aman45/"
+                  target="_blank"
+                  class="text-gray-500 font-bold"
+                  >Click Here</a
+                >
+              </h4>
             </div>
-
           </div>
-          <div>
-
-          </div>
-          <div>
-
-          </div>
+          <div></div>
+          <div></div>
         </div>
 
-        <div>
-           
-        </div>
+        <div></div>
       </section>
 
       <section id="Achievements" class="text-white">
-        <div class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2">
+        <div
+          class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2"
+        >
           <h2>ACHIEVEMENTS</h2>
         </div>
 
-        <div class="achiements px-5 text-center lg:text-left lg:px-60 py-10 leading-10">
-          <h2 class="mb-4">Achieved 2<sup>nd</sup> Place in Code Crusade (@NimBus 2k25 National Level Competition Organized by SGI) :<a class="text-gray-500 font-bold" href="https://drive.google.com/file/d/1Q9Gl2CfQAziRrzz88oJ7D_Ltum5wh9jp/view?usp=drive_link">
-            Link
-          </a></h2>
-          <h2 class="mb-4">Achieved 1<sup>st</sup> Place in Codex (FusionEra 2k25 National Level Competition Organized by JJMCOE) :<a class="text-gray-500 font-bold"  href="https://drive.google.com/file/d/1Hku-zknYC5bIdoPcgUuNXS_Atfwe0yT3/view?usp=drive_link">
-            Link
-          </a></h2>
-          <h2 class="mb-4">Achieved 1<sup>st</sup> Place in TECHTRENDT 2K25 National Level Competition Organized by JJMCOE :<a class="text-gray-500 font-bold"  href="https://drive.google.com/file/d/1uMJs9XjEtOyYYhN8LBtyLj6FKK78Ne_Y/view?usp=sharing">
-            Link
-          </a></h2>
-          <h2 class="mb-4">Achieved 2<sup>nd</sup> Place in Lakshya 3.0 2K25 National Level Competition Organized by JJMCOE :<a class="text-gray-500 font-bold"  href="https://drive.google.com/file/d/11OQsDpuYiFRgABJITwAOm5HpY3ZqO-0h/view?usp=sharing">
-            Link
-          </a></h2>
-          <h2 class="mb-4">Achieved 2<sup>nd</sup> Rank in QUIZ Competition Organized by JJMCOE:<a class="text-gray-500 font-bold"  href="https://drive.google.com/file/d/1WqI64DBxN2ahaec2pRjnbFDe95yo43Ai/view?usp=sharing">
-            Link
-          </a></h2>
+        <div
+          class="achiements px-5 text-center lg:text-left lg:px-60 py-10 leading-10"
+        >
+          <h2 class="mb-4">
+            Achieved 2<sup>nd</sup> Place in Code Crusade (@NimBus 2k25 National
+            Level Competition Organized by SGI) :<a
+              class="text-gray-500 font-bold"
+              href="https://drive.google.com/file/d/1Q9Gl2CfQAziRrzz88oJ7D_Ltum5wh9jp/view?usp=drive_link"
+            >
+              Link
+            </a>
+          </h2>
+          <h2 class="mb-4">
+            Achieved 1<sup>st</sup> Place in Codex (FusionEra 2k25 National
+            Level Competition Organized by JJMCOE) :<a
+              class="text-gray-500 font-bold"
+              href="https://drive.google.com/file/d/1Hku-zknYC5bIdoPcgUuNXS_Atfwe0yT3/view?usp=drive_link"
+            >
+              Link
+            </a>
+          </h2>
+          <h2 class="mb-4">
+            Achieved 1<sup>st</sup> Place in TECHTRENDT 2K25 National Level
+            Competition Organized by JJMCOE :<a
+              class="text-gray-500 font-bold"
+              href="https://drive.google.com/file/d/1uMJs9XjEtOyYYhN8LBtyLj6FKK78Ne_Y/view?usp=sharing"
+            >
+              Link
+            </a>
+          </h2>
+          <h2 class="mb-4">
+            Achieved 2<sup>nd</sup> Place in Lakshya 3.0 2K25 National Level
+            Competition Organized by JJMCOE :<a
+              class="text-gray-500 font-bold"
+              href="https://drive.google.com/file/d/11OQsDpuYiFRgABJITwAOm5HpY3ZqO-0h/view?usp=sharing"
+            >
+              Link
+            </a>
+          </h2>
+          <h2 class="mb-4">
+            Achieved 2<sup>nd</sup> Rank in QUIZ Competition Organized by
+            JJMCOE:<a
+              class="text-gray-500 font-bold"
+              href="https://drive.google.com/file/d/1WqI64DBxN2ahaec2pRjnbFDe95yo43Ai/view?usp=sharing"
+            >
+              Link
+            </a>
+          </h2>
         </div>
-
       </section>
 
       <section id="projects" class="text-white">
-        <div class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2">
+        <div
+          class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2"
+        >
           <h2>PROJECTS</h2>
         </div>
 
-        <div class="project-info px-4 pb-10 md:flex justify-center  flex-col gap-5 lg:flex-row lg:gap-15 ">
+        <div
+          class="project-info px-4 pb-10 md:flex justify-center flex-col gap-5 lg:flex-row lg:gap-15"
+        >
           <div class="title pb-4 pt-10 lg:w-1/2 lg:text-right">
             <h2 class="">Fashion Gallary Website</h2>
-            <h5 class="font-bold">Link of website : </h5>
-            <a href="" class="text-gray-500">
-              click Here
-            </a>
+            <h5 class="font-bold">Link of website :</h5>
+            <a href="" class="text-gray-500"> click Here </a>
           </div>
-          <div class="hidden lg:flex linedot w-20 h-30 pt-10 justify-center items-center flex-col mb-12">
-            <img src="dot-svgrepo-com.svg" alt="Dot image" class="h-4 z-0">
+          <div
+            class="hidden lg:flex linedot w-20 h-30 pt-10 justify-center items-center flex-col mb-12"
+          >
+            <img src="dot-svgrepo-com.svg" alt="Dot image" class="h-4 z-0" />
             <span class="inline-block bg-white w-0.5 h-full -mt-1"></span>
-              
           </div>
           <div class="sub-part lg:w-1/2 lg:text-left lg:pt-10">
             <h4>USING HTML , CSS , JAVASCRIPT</h4>
-            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
           </div>
         </div>
 
         <div class="row md:flex md:px-30 md:py-5 lg:px-60 lg:py-10">
           <div class="col flex justify-center items-center flex-col gap-4 px-4">
             <div class="content">
-              <img src="pp1.jpg" alt="">
+              <img src="pp1.jpg" alt="" />
             </div>
             <div class="content">
-              <img src="pp2.jpg" alt="">
+              <img src="pp2.jpg" alt="" />
             </div>
           </div>
 
           <div class="col px-4 py-8 flex justify-center items-center">
             <div class="content">
-              <img src="pp5.jpg" alt="">
+              <img src="pp5.jpg" alt="" />
             </div>
           </div>
 
           <div class="col flex justify-center items-center flex-col gap-4 px-4">
             <div class="content">
-              <img src="pp3.jpg" alt="">
+              <img src="pp3.jpg" alt="" />
             </div>
             <div class="content">
-              <img src="pp4.jpg" alt="">
+              <img src="pp4.jpg" alt="" />
             </div>
           </div>
-
         </div>
-
       </section>
 
       <section id="Contact-me" class="text-white">
-        <div class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2">
+        <div
+          class="section-heading text-center uppercase text-2xl font-bold text-white p-10 border-b-2"
+        >
           <h2>CONTACT ME</h2>
         </div>
 
-        <div class="info sm:flex justify-center sm:gap-5 md:gap-10 lg:gap-20 lg:px-20">
-          <div class="p-4 py-10 w-full lg:w-1/3 md:w-1/3 ">
-            <img src="contact.png" alt="" class="">
+        <div
+          class="info sm:flex justify-center sm:gap-5 md:gap-10 lg:gap-20 lg:px-20"
+        >
+          <div class="p-4 py-10 w-full lg:w-1/3 md:w-1/3">
+            <img src="contact.png" alt="" class="" />
           </div>
 
-          <div class="contact-info  sm:pt-10">
-            <div class="contact-address ">
+          <div class="contact-info sm:pt-10">
+            <div class="contact-address">
               <div class="contact-head pl-8">
                 <h3 class="font-bold text-2xl">Aman Momin</h3>
                 <p class="pt-2 leading-8">
                   Full Stack Developer
-                  <br>
+                  <br />
                   Team Management
-                  <br>
+                  <br />
                   Leadership
                 </p>
               </div>
@@ -487,30 +591,41 @@
               </div>
 
               <div class="relative pl-8 pt-4">
-
-                <div class="absolute text-fuchsia-600  flex justify-start space-x-6 rounded-b-2xl backdrop-blur-sm transition-all duration-300">
-
-                  <a href="#" class="hover:scale-125 transition-transform ">
-                    <img src="linkedin.svg" alt="LinkedIn" class="w-6 h-6 sm:w-8 sm:h-8 ">
+                <div
+                  class="absolute text-fuchsia-600 flex justify-start space-x-6 rounded-b-2xl backdrop-blur-sm transition-all duration-300"
+                >
+                  <a href="#" class="hover:scale-125 transition-transform">
+                    <img
+                      src="linkedin.svg"
+                      alt="LinkedIn"
+                      class="w-6 h-6 sm:w-8 sm:h-8"
+                    />
                   </a>
 
-                  <a href="#" class="hover:scale-125 transition-transform ">
-                    <img src="github-svgrepo-com.svg" alt="GitHub" class="w-6 h-6 sm:w-8 sm:h-8 ">
+                  <a href="#" class="hover:scale-125 transition-transform">
+                    <img
+                      src="github-svgrepo-com.svg"
+                      alt="GitHub"
+                      class="w-6 h-6 sm:w-8 sm:h-8"
+                    />
                   </a>
-                          
                 </div>
               </div>
- 
             </div>
           </div>
         </div>
 
-        <div class="copy-right text-center py-20">          
-						© copyright Aman Momin.
-        </div>
+        <div class="copy-right text-center py-20">© copyright Aman Momin.</div>
       </section>
-
-
     </div>
+    <script>
+      let menuOpen = false;
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("menuToggle").addEventListener("click", () => {
+          menuOpen = !menuOpen;
+          mobileMenu.style.left = menuOpen ? "0" : "-100%";
+        });
+      });
+    </script>
   </body>
 </html>
