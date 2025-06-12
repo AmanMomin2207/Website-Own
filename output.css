@@ -803,6 +803,13 @@
       }
     }
   }
+  .hover\:bg-fuchsia-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-fuchsia-50);
+      }
+    }
+  }
   .hover\:text-fuchsia-600 {
     &:hover {
       @media (hover: hover) {
@@ -973,6 +980,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:h-dvh {
+    @media (width >= 64rem) {
+      height: 100dvh;
     }
   }
   .lg\:w-1\/2 {
