@@ -83,7 +83,7 @@ Feel free to:
 
 - ⭐️ Star the repo if you like the work
 - Provide issues or PRs for improvements
-- Contact me at [**aman.momin@example.com**](mailto\:aman.momin@example.com)
+- Contact me at [**mominaman2207@gmail.com**](mailto\:mominaman2207@gmail.com)
 
 ---
 
