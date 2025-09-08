@@ -1,0 +1,66 @@
+[
+  {
+    "img" : "image/makemytour.png",
+    "title": "MakeMyTour",
+    "description": "Developed a full-stack travel booking application with a responsive frontend using Next.js and React. Designed and implemented    backend REST APIs using Spring Boot for user management, and booking workflows. Integrated MongoDB for scalable, high-performance database management and real-time data access. ",
+    "techStack": ["Spring-Boot", "Next.js", "React.js", "Tailwind CSS", "MongoDB"],
+    "link": "https://github.com/AmanMomin2207/MakeMyTrip",
+    "GitHub Link" : "https://github.com/AmanMomin2207/MakeMyTrip.git"
+  },
+  {
+    "img" : "image/Movie-app.png",
+    "title": "Movie-App",
+    "description": "Developed a responsive single-page application (SPA) using React.js and React-Use for efficient state and lifecycle management. Integrated Appwrite backend for user authentication, database handling, and file storage. Utilized Vite for fast builds, hot module replacement (HMR), and improved development experience.",
+    "techStack": ["React.js", "Tailwind CSS", "Vite" , "AppWrite"],
+    "link": "https://github.com/yourusername/fake-news-detection",
+    "GitHub Link" : "https://github.com/AmanMomin2207/Movie-Application.git"
+  },
+  {
+    "img" : "image/Todo.png",
+    "title": "Todo-App",
+    "description": "Todo-React-JS is a simple React application (likely scaffolded with Vite) for managing a to-do list. Users can add, mark as completed, edit, and delete tasks—all handled dynamically with React's state and component structure. It’s a hands-on project focusing on core React concepts like components, state management, and event handling.",
+    "techStack": ["React.js", "Tailwind CSS", "JavaScript" , "Vite"],
+    "link": "http://localhost:5173/Todo-React-JS/",
+    "GitHub Link" : "https://github.com/AmanMomin2207/Todo-React-JS"
+  },
+  {
+    "img" : "image/Tube-Pro.png",
+    "title": "Tube-Pro",
+    "description": "TubePro (Vite + React) appears to be a React application scaffolded with Vite, currently displaying the default Vite welcome screen. It likely serves as the starting point for a dynamic front-end project using React and fast module replacement for development.",
+    "techStack": ["React.js", "Tailwind CSS", "JavaScript" , "Vite"],
+    "link": "https://tubepro-8.onrender.com/",
+    "GitHub Link" : "https://github.com/AmanMomin2207/TubePro"
+  },
+  {
+    "img" : "image/E-notebook.png",
+    "title": "E-Notebook Website",
+    "description": "A lightweight, static electronic notebook built with HTML, CSS, and JavaScript. It provides a simple interface for viewing and organizing notes via dedicated pages (e.g., index.html, notes.html), styled with CSS and enhanced with interactivity through JavaScript. Suitable as a personal note organizer or study companion.",
+    "techStack": ["HTML", "CSS", "JavaScript" ],
+    "link": "https://amanmomin2207.github.io/E-notebook-Website/",
+    "GitHub Link" : "https://github.com/AmanMomin2207/E-notebook-Website"
+  },
+  {
+    "img" : "image/Fake_P.png",
+    "title": "Fake News Detection",
+    "description": "Fake News Detector is a machine learning–based project that identifies whether a news article is real or fake. It uses Natural Language Processing (NLP) techniques and a Convolutional Neural Network (CNN) model for classification. The project includes a trained model, vectorizer, and a Flask web app interface for real-time predictions.",
+    "techStack": ["PYTHON", "FLASK", "HTML" , "CSS" , "JavaScript"],
+    "link": "https://github.com/AmanMomin2207/Fake-News-Detector",
+    "GitHub Link" : "https://github.com/AmanMomin2207/Fake-News-Detector"
+  },
+  {
+    "img" : "image/amazon.png",
+    "title": "Amazon Clone",
+    "description": "Developed a responsive single-page application (SPA) using React.js and React-Use for efficient state and lifecycle management. Integrated Appwrite backend for user authentication, database handling, and file storage. Utilized Vite for fast builds, hot module replacement (HMR), and improved development experience.",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "link": "https://github.com/AmanMomin2207/Amazon_Clone",
+    "GitHub Link" : "https://github.com/AmanMomin2207/Amazon_Clone"
+  },
+  {
+    "img" : "image/playlist.png",
+    "title": "Playlist Downloader",
+    "description": "Downloading-Playlist is a lightweight web application (built with Python, HTML/CSS, and JavaScript) that lets users download entire playlists—likely from platforms like YouTube or Spotify—through a browser interface. It includes an app.py backend, template-based frontend files (templates/), and static assets under static/, plus a requirements.txt that defines dependencies.",
+    "techStack": ["PYTHON", "FLASK", "HTML" , "CSS" , "JavaScript" , "Jinja Template"],
+    "link": "https://github.com/AmanMomin2207/Downloading-Playlist",
+    "GitHub Link" : "https://github.com/AmanMomin2207/Downloading-Playlist"
+  }
+]
