@@ -4,12 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((projects) => {
       const container = document.getElementById("project-info");
 
-      
-
       projects.map((project) => {
-        
         const card = document.createElement("div");
-        card.className = "lg:w-1/4 mb-10 px-4 py-4 shadow-2xl shadow-sky-300 bg-blue-900 rounded-lg";
+        card.className =
+          "lg:w-1/4 mb-10 px-4 py-4 shadow-2xl shadow-sky-300 bg-blue-900 rounded-lg";
 
         const links = project.link ? project.link : "#";
 
@@ -63,4 +61,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
     .catch((err) => console.error("Error loading projects:", err));
+
+  const toggle = document.getElementById("menuToggle");
+  const menu = document.getElementById("mobileMenu");
+
+  // Initialize menu position
+  menu.style.left = "-100%";
+
+  toggle.addEventListener("click", function () {
+    if (menu.style.left === "0px") {
+      // Menu is currently visible, hide it
+      menu.style.left = "-100%";
+    } else {
+      // Menu is currently hidden, show it
+      menu.style.left = "0px";
+    }
+  });
 });
